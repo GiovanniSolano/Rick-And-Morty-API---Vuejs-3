@@ -1,5 +1,8 @@
 # rickandmorty-app
 
+## APP URL
+https://rickandmortyvue.web.app
+
 ## Project setup
 ```
 yarn install

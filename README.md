@@ -1,4 +1,4 @@
-# pokemon-app
+# rickandmorty-app
 
 ## Project setup
 ```

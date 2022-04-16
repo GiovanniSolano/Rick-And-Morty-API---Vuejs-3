@@ -11,7 +11,7 @@
         />
         Rick And Morty API
       </a>
-      <span class="navbar-text text-white me-4"> Número de personajes: {{numberMaxOfCharacters}} - Página: {{pageNumber}}</span>
+      <span class="navbar-text text-white me-4"> Número de personajes: ({{numberMaxOfCharacters}}) - Página: {{pageNumber}}</span>
     </div>
   </nav>
 </template>

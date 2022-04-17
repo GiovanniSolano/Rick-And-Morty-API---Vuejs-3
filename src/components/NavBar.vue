@@ -11,7 +11,7 @@
         />
         Rick And Morty API
       </a>
-      <span class="navbar-text text-white me-4"> Número de personajes: ({{numberMaxOfCharacters}}) - Página: {{pageNumber}}</span>
+      <span class="navbar-text text-white me-4"> Número de personajes: ({{numberMaxOfCharacters}}) - Página: {{pageNumber}} de {{maxPages}}</span>
     </div>
   </nav>
 </template>
@@ -21,11 +21,12 @@ import useCharacters from '@/composables/useCharacters';
 export default {
     setup() {
 
-        const { pageNumber, numberMaxOfCharacters } = useCharacters();
+        const { pageNumber, numberMaxOfCharacters, maxPages } = useCharacters();
 
         return {
             pageNumber,
-            numberMaxOfCharacters
+            numberMaxOfCharacters,
+            maxPages
         };
     },
 }

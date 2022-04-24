@@ -1,6 +1,6 @@
 <template>
   <div class="col">
-    <div class="card pointer">
+    <div class="card h-100 pointer animate__animated animate__fadeIn animate__fast">
       <img
         :src="character.image"
         class="card-img-top img-thumbnail rounded"

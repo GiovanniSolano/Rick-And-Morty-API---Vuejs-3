@@ -2,6 +2,10 @@ export const setIsLoading = (state, value) => {
     state.isLoading = value;
 }
 
+export const setEmptyCharacter = (state) => {
+    state.character = null;
+}
+
 export const setCharacters = (state, [data, page]) => {
 
     if(data.results.length <= 0) {
@@ -19,4 +23,13 @@ export const setCharacters = (state, [data, page]) => {
     state.pageNumber = page;
     state.maxPages = data.info.pages;
     state.numberMaxOfCharacters = data.info.count;
+}
+
+export const setCharacter = (state, character) => {
+
+    if(!character) {
+        state.character = {};
+    }
+
+    state.character = character;
 }

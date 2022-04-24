@@ -22,3 +22,9 @@ export const numberMaxOfCharacters = ( state ) => {
     return state.numberMaxOfCharacters;
 
 }
+
+export const character = ( state ) => {
+
+    return state.character;
+
+}
